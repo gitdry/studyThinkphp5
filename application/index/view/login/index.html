@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+</head>
+<body>
+	<!-- 
+		{:url('../check')}  表示的是提交给当前的控制器
+	-->
+	<form action="{:url('../check')}" method="post">
+		<p>
+			username: <input type="text" name="username">
+		</p>
+		<p>
+			password: <input type="password" name="password">
+		</p>
+		<p>
+			<input type="submit" value="登录"><input type="reset" value="重置">
+		</p>
+	</form>
+	<!--   url 是表示的是获取当前的url  url 返回地址  如果不带参数就默认为当前页面
+	-->
+	<h3>当前url：{:url('check')}</h3>
+</body>
+</html>
